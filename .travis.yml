@@ -2,7 +2,7 @@ language: java
 jdk: openjdk7
 install:
   - cd ..
-  - git clone htpps://github.com/aerogear/aerogear-otp-java.git
+  - git clone https://github.com/aerogear/aerogear-otp-java.git
   - mvn -f aerogear-otp-java/pom.xml install
   - echo "install begin"
   - export DISPLAY=:99.0
