@@ -4,9 +4,8 @@ install:
   - cd ..
   - git clone htpps://github.com/aerogear/aerogear-otp-java.git
   - mvn -f aerogear-otp-java/pom.xml install
-  - cd aerogear-otp-java-test
   - echo "install begin"
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - echo "install end"
-script: mvn test
+script: mvn -f aerogear-otp-java-test/pom.xml test
